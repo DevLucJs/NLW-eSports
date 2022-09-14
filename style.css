@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2634;
+  border-radius: 5px;
+}
+
+/* ============================================= EXPLORER LAYOUT ============================================= */
+main {
+  height: 100vh;
+  overflow: auto;
+
+  background-image: url(assets/rocketwallpaper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  position: relative;
+  top: 32px;
+
+  padding: 20px;
+
+  transition: 0.5s;
+}
+
+#user-icon {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+
+  object-fit: cover;
+}
+
+#mygames, #channels-streamers, #social-media {
+  height: 100%;
+  max-width: 580px;
+  width: 100%;
+
+  background: #2A2634;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+
+  padding: 24px 32px 32px;
+}
+
+#social-media {
+  margin-bottom: 10px;
+}
+
+/* ================== EXPLORER CONTENT ================== */
+#explorer h1 {
+  font-family: 'Inter';
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: -0.47px;
+  color: #fff;
+}
+
+#explorer p {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: -0.18px;
+  color: #A1A1AA;
+
+  margin-bottom: 24px;
+}
+
+#thumbnails-and-icons-gap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.mygames-images {
+  width: 90px;
+  height: 120px;
+
+  object-fit: contain;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.channels-streamers-images {
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+}
+
+.social-media-images {
+  width: 33px;
+  height: 32px;
+
+  object-fit: contain;
+}
+
+@media (max-width: 550px) {
+  #thumbnails-and-icons-gap {
+    justify-content: center;
+  }
+}
